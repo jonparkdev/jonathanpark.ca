@@ -1,8 +1,8 @@
-#My Personal Site and blog
+# My Personal Site and blog
 
 Created as my personal website and blog. An opportunity for me to write things down. "If you have a thought but cannot express it then you don't really have that thought!"
 
-###Development
+### Development
 
 Run the following code in bash script to load site:
 
