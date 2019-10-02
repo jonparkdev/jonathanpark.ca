@@ -1,6 +1,6 @@
 # My Personal Site and blog
 
-Created as my personal website and blog. An opportunity for me to write things down. "If you have a thought but cannot express it then you don't really have that thought!"
+Created as my personal website and blog. An opportunity for me to write things down motivated by the following quote: "If you have a thought but cannot express it then you don't really have that thought!"
 
 ### Development
 
