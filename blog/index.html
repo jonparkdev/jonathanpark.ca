@@ -9,10 +9,10 @@
 		<title> Blog | Jonathan Park </title>
 	</head>
 	<body>
-     <h1><a href = '/jonathanpark.ca/'>Jonathan Park</a></h1>
+     <h1><a href = '/'>Jonathan Park</a></h1>
      {% include nav.html %}
 {% assign posts = site.pages | where:"layout","post" | sort:"date" | reverse %}{% for post in posts %}{% assign prefix = post.url | truncate:6,"" %}{% if prefix == "/blog/" %}		<div class="entry">
-			<h2><a href="/jonathanpark.ca{{ post.url | append: '\n' | replace: '/index.html\n', '/\n' | remove_first: '\n' }}" class="permalink" >{{ post.title | xml_escape }}</a></h2>
+			<h2><a href="{{ post.url | append: '\n' | replace: '/index.html\n', '/\n' | remove_first: '\n' }}" class="permalink" >{{ post.title | xml_escape }}</a></h2>
 			<p class="time">{{ post.date | date:'%B %-d, %Y' }}</p>
 		</div>
 {% endif %}{% endfor %}

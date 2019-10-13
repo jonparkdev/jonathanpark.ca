@@ -9,7 +9,7 @@
 	</head>
 	<body>
 
-<h1><a href = '/jonathanpark.ca'>Jonathan Park</a></h1>
+<h1><a href = '/'>Jonathan Park</a></h1>
 {% include nav.html %}
 
 {% assign posts = site.pages | sort:"date" %}{% comment %}
@@ -25,10 +25,10 @@
 	{% endif %}
 {% endfor %}
 		<div class="navigation">
-			{% if previous %}<a href="/jonathanpark.ca{{ previous.url | append: '\n' | replace: '/index.html\n', '/\n' | remove_first: '\n' }}">&larr; Previous</a> <span class="divider"></span>{% else %}{% comment %}
+			{% if previous %}<a href="{{ previous.url | append: '\n' | replace: '/index.html\n', '/\n' | remove_first: '\n' }}">&larr; Previous</a> <span class="divider"></span>{% else %}{% comment %}
 			{% endcomment %}<div style="visibility:hidden"><a href="#">&larr; Previous</a> <span class="divider"></span></div>{% endif %}
 			<a href="..">Blog Index</a>
-			{% if next %}<span class="divider"></span> <a href="/jonathanpark.ca{{ next.url | append: '\n' | replace: '/index.html\n', '/\n' | remove_first: '\n' }}">Next &rarr;</a>{% else %}{% comment %}
+			{% if next %}<span class="divider"></span> <a href="{{ next.url | append: '\n' | replace: '/index.html\n', '/\n' | remove_first: '\n' }}">Next &rarr;</a>{% else %}{% comment %}
 			{% endcomment %}<span style="visibility:hidden"><span class="divider"></span> <a href="#">Next &rarr;</a></span>{% endif %}
 		</div>
 
@@ -38,10 +38,10 @@
 			{{ content }}
 
 		<div class="navigation">
-			{% if previous %}<a href="/jonathanpark.ca{{ previous.url | append: '\n' | replace: '/index.html\n', '/\n' | remove_first: '\n' }}">&larr; Previous</a> <span class="divider"></span>{% else %}{% comment %}
+			{% if previous %}<a href="{{ previous.url | append: '\n' | replace: '/index.html\n', '/\n' | remove_first: '\n' }}">&larr; Previous</a> <span class="divider"></span>{% else %}{% comment %}
 			{% endcomment %}<div style="visibility:hidden"><a href="#">&larr; Previous</a> <span class="divider"></span></div>{% endif %}
 			<a href="..">Blog Index</a>
-			{% if next %}<span class="divider"></span> <a href="/jonathanpark.ca{{ next.url | append: '\n' | replace: '/index.html\n', '/\n' | remove_first: '\n' }}">Next &rarr;</a>{% else %}{% comment %}
+			{% if next %}<span class="divider"></span> <a href="{{ next.url | append: '\n' | replace: '/index.html\n', '/\n' | remove_first: '\n' }}">Next &rarr;</a>{% else %}{% comment %}
 			{% endcomment %}<span style="visibility:hidden"><span class="divider"></span> <a href="#">Next &rarr;</a></span>{% endif %}
 		</div>
 
