@@ -1,0 +1,38 @@
+[
+	{
+		"id": "http://zotero.org/users/local/0rs7xJIC/items/GXQFK6RX",
+		"type": "article-journal",
+		"container-title": "American Scientist",
+		"DOI": "10.1511/2013.101.92",
+		"ISSN": "0003-0996, 1545-2786",
+		"issue": "2",
+		"journalAbbreviation": "Am. Sci.",
+		"page": "92",
+		"source": "DOI.org (Crossref)",
+		"title": "First Links in the Markov Chain",
+		"URL": "https://www.americanscientist.org/article/first-links-in-the-markov-chain",
+		"volume": "101",
+		"author": [
+			{
+				"family": "Hayes",
+				"given": "Brian"
+			}
+		],
+		"accessed": {
+			"date-parts": [
+				[
+					"2020",
+					3,
+					18
+				]
+			]
+		},
+		"issued": {
+			"date-parts": [
+				[
+					"2013"
+				]
+			]
+		}
+	}
+]

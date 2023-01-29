@@ -1,0 +1,23 @@
+[
+	{
+		"id": "http://zotero.org/users/local/0rs7xJIC/items/X929X5A3",
+		"type": "book",
+		"event-place": "London",
+		"publisher": "George Allen and Unwin Ltd.",
+		"publisher-place": "London",
+		"title": "Introduction to Mathematical Philosophy",
+		"author": [
+			{
+				"family": "Russell",
+				"given": "Bertrand"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"1919"
+				]
+			]
+		}
+	}
+]
