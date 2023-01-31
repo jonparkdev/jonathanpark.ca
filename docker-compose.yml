@@ -1,0 +1,15 @@
+version: "3.0"
+
+services:
+  jonathanpark_ca:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      - 3000:3000
+#     networks:
+#       - jonathanpark_ca
+
+# networks:
+#   jonathanpark_ca_network:
+#     external: true
