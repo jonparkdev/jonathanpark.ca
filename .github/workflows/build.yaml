@@ -1,0 +1,38 @@
+name: Docker build and publish
+
+on:
+  push:
+    branches:
+      - "main"
+
+jobs:
+  build_deploy:
+    name: build and push docker container
+
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Docker Login
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_PASS}}
+
+      - name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v3
+        with:
+          images: jonparkdev/jonathanpark.ca
+          tags: |
+            type=raw,latest
+            type=sha
+      
+      - name: Build and push docker image
+        uses: docker/build-push-action@v2
+        with:
+          context: .
+          push: true
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.output.labels }}
+          
