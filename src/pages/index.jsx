@@ -162,13 +162,6 @@ function Resume() {
       start: '2011',
       end: '2014',
     },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
-    },
   ]
 
   return (
