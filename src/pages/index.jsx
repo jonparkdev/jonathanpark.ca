@@ -246,19 +246,18 @@ export default function Home({ articles }) {
         <title>Jonathan Park - An excuse to learn</title>
         <meta
           name="description"
-          content="I’m Jonathan, a software designer and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore space on their own terms."
+          content="I’m Jonathan Park, a software curious about way to many things."
         />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software designer.
+            Software Engineer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Jonathan, a software designer and entrepreneur based in New York
-            City. I’m the founder and CEO of Planetaria, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            {`The fact that you are reading this at this very moment, means I actually got this website deployed did not 
+            fall into my usual trap of a perpetual cycle of perfectionism. So without further adieu, Hi! I'm Jonathan Park, 
+            a software engineer who is curious about way to many things.`}
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
