@@ -255,9 +255,8 @@ export default function Home({ articles }) {
             Software Engineer.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            {`The fact that you are reading this at this very moment, means I actually got this website deployed did not 
-            fall into my usual trap of a perpetual cycle of perfectionism. So without further adieu, Hi! I'm Jonathan Park, 
-            a software engineer who is curious about way to many things.`}
+            {`The fact that someone might be reading this very sentence at this very moment means I actually got my website deployed. Success!
+            So without further adieu, Hi! I'm Jonathan Park, a software engineer who is curious about way too many things.`}
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
