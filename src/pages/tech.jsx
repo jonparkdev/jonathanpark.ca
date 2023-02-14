@@ -86,7 +86,7 @@ export default function Uses() {
               <Link href="https://supernotes.app/">
                 <span className="text-teal-500 dark:text-teal-400">Supernotes</span>
               </Link>
-              . The syste, of card based notes is the most congntive friendly way to organize
+              . The system of card based notes is the most congntive friendly way to organize
               information.
             </Tool>
           </ToolsSection>
