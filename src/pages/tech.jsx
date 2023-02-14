@@ -76,7 +76,7 @@ export default function Uses() {
           </ToolsSection>
           <ToolsSection title="Productivity">
             <Tool title="Pen & Paper">
-              You can’t beet the analog feels of writing something down with pen
+              You can’t beat the analog feels of writing something down with pen
               and paper. It’s the simplist way to get things done, without
               getting stuck in analysis paralysis.
             </Tool>
