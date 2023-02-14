@@ -12,6 +12,14 @@ const nextConfig = {
     scrollRestoration: true,
   },
   output: 'standalone',
+  async rewrites() {
+    return [
+      {
+        source: '/robots.txt',
+        destination: '/api/robots',
+      },
+    ];
+  },
 };
 
 const withMDX = nextMDX({
