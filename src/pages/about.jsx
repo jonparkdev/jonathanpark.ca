@@ -1,15 +1,11 @@
-import Image from 'next/image'
-import Head from 'next/head'
-import Link from 'next/link'
-import clsx from 'clsx'
+import Image from 'next/image';
+import Head from 'next/head';
+import Link from 'next/link';
+import clsx from 'clsx';
 
-import { Container } from '@/components/Container'
-import {
-  InstagramIcon,
-  GitHubIcon,
-  LinkedInIcon,
-} from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import { Container } from '@/components/Container';
+import { InstagramIcon, GitHubIcon, LinkedInIcon } from '@/components/SocialIcons';
+import portraitImage from '@/images/portrait.jpg';
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -22,7 +18,7 @@ function SocialLink({ className, href, children, icon: Icon }) {
         <span className="ml-4">{children}</span>
       </Link>
     </li>
-  )
+  );
 }
 
 function MailIcon(props) {
@@ -33,7 +29,7 @@ function MailIcon(props) {
         d="M6 5a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V8a3 3 0 0 0-3-3H6Zm.245 2.187a.75.75 0 0 0-.99 1.126l6.25 5.5a.75.75 0 0 0 .99 0l6.25-5.5a.75.75 0 0 0-.99-1.126L12 12.251 6.245 7.187Z"
       />
     </svg>
-  )
+  );
 }
 
 export default function About() {
@@ -64,18 +60,17 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                It can be a bit of a challenge to write about oneself. I can
-                talk about a bunch of things that best describe me but, in the
-                end, a short blurb won’t get to the heart of who I am.
+                It can be a bit of a challenge to write about oneself. I can talk about a bunch of
+                things that best describe me but, in the end, a short blurb won’t get to the heart
+                of who I am.
               </p>
               <p>
-                I am curious about many things which fuels a love to learn.
-                Currently, the passions that are part of my day to day life
-                revolve around software and martial arts. I also have a fond
-                interest in mathematics and philosophy. To get a better sense of
-                my voice, feel free to take a look around the site. And if there
-                is anything that relates to you or peaks your curiousity please
-                feel free to reach out. I would love to chat!
+                I am curious about many things which fuels a love to learn. Currently, the passions
+                that are part of my day to day life revolve around software and martial arts. I also
+                have a fond interest in mathematics and philosophy. To get a better sense of my
+                voice, feel free to take a look around the site. And if there is anything that
+                relates to you or peaks your curiousity please feel free to reach out. I would love
+                to chat!
               </p>
             </div>
           </div>
@@ -88,11 +83,7 @@ export default function About() {
               >
                 Follow on Instagram
               </SocialLink>
-              <SocialLink
-                href="https://github.com/jonparkdev"
-                icon={GitHubIcon}
-                className="mt-4"
-              >
+              <SocialLink href="https://github.com/jonparkdev" icon={GitHubIcon} className="mt-4">
                 Follow on GitHub
               </SocialLink>
               <SocialLink
@@ -114,5 +105,5 @@ export default function About() {
         </div>
       </Container>
     </>
-  )
+  );
 }

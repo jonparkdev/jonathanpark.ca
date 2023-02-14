@@ -1,44 +1,94 @@
-import { ArticleLayout } from '@/components/ArticleLayout'
-import Image from 'next/image'
-import coopGraph from './coop.png'
+import { ArticleLayout } from '@/components/ArticleLayout';
+import Image from 'next/image';
+import coopGraph from './coop.png';
 
 export const meta = {
   author: 'Jonathan Park',
   date: '2023-02-05',
-  title: 'Insert Clickbait Title Here: How I landed my first software job 3 weeks after I graduated with no experience - Part 1',
-  description:
-    'A multipart series of articles exploring how I got into software engineering.',
-}
+  title:
+    'Insert Clickbait Title Here: How I landed my first software job 3 weeks after I graduated with no experience - Part 1',
+  description: 'A multipart series of articles exploring how I got into software engineering.',
+};
 
-export default (props) => <ArticleLayout meta={meta} {...props} />
+export default (props) => <ArticleLayout meta={meta} {...props} />;
 
-## *Did you click?* 
+## _Did you click?_
 
-Now that I have you here, let me clarify. It is true I received my first job as a full stack developer approximately 3 weeks after I completed my undergraduate degree.  It is also true I had no "industry" related experience (my resume included "Appliance Salesman" and "Martial Arts Instructor").  I barely knew what a static website was, let alone understand basic client/server architecture. I did have a couple computer science courses under my belt but this was definitely not sufficient enough to call my self a developer.  I had a huge amount of imposter syndrome, plus some more on top of that.
+Now that I have you here, let me clarify. It is true I received my first job as a full stack
+developer approximately 3 weeks after I completed my undergraduate degree. It is also true I had no
+"industry" related experience (my resume included "Appliance Salesman" and "Martial Arts
+Instructor"). I barely knew what a static website was, let alone understand basic client/server
+architecture. I did have a couple computer science courses under my belt but this was definitely not
+sufficient enough to call my self a developer. I had a huge amount of imposter syndrome...plus some
+more on top of that.
 
-So what's the point of this article.  Someone recently came to me for advice relating to my career as a software engineer.  And I never thought that I would be in this position that I am now offering up guidance to someone who needs it.  I remember being fresh out of university terrified of what came next. I just exited this institution I had expected would provide me with the relevant skills to help start my career but the reality was I knew nothing.  This important information that I was lacking, I would have to find and learn on my own.  Thus, I am writing to reflect on my journey. Hopefully as I proceed, I can extract some useful nuggets out of my ongoing story and I hope whoever may come across this might find some value, or at least find some entertainment.
-
+So what's the point of this article. Someone recently came to me for advice relating to my career as
+a software engineer. And I never thought that I would be in this position that I am now offering up
+guidance to someone who needs it. I remember being fresh out of university terrified of what came
+next. I just exited this institution I had expected would provide me with the relevant skills to
+help start my career but the reality was I knew nothing. This important information that I was
+lacking, I would have to find and learn on my own. Thus, I am writing to reflect on my journey.
+Hopefully as I proceed, I can extract some useful nuggets out of my ongoing story and I hope whoever
+may come across this might find some value, or at least find some entertainment.
 
 ## Google - Part 1
 
-It was fall of 2018.  I had just returned to school from a permenant layoff a few terms earlier to finish my degree after being a university dropout for the previous 2 years.  I would be graduating soon and being a non co-op student at the University of Waterloo, I needed to figure out how I was going to enter the job market in my field of study with no prior applicable work experience.  And if you've ever looked at any software job applications that asks for 12+ years of experience in some technology, you tend to die a little inside.  Trying to get the most out all the university resources, I went to a career counsellor who recommended I stop in at recruiting events.
+It was fall of 2018.  I had just returned to school from a permenant layoff a few terms earlier to
+finish my degree after being a university dropout for the previous 2 years.  I would be graduating
+soon and being a non co-op student at the University of Waterloo, I needed to figure out how I was
+going to enter the job market in my field of study with no prior applicable work experience.  And if
+you've ever looked at any software job applications that asks for 12+ years of experience in some
+technology, you tend to die a little inside.  Trying to get the most out all the university
+resources, I went to a career counsellor who recommended I stop in at recruiting events.
 
-Google was coming to campus for their termly recruiting event.  I had arrived 20 minutes early so that I could settle in and get a decent seat.  How I was mistaken.  As I arrived the line had already exceeded the plenty of space that the university's Federation Hall had provided.   Every hallway was lined with students and if it hadn't been raining, the line might have easily wrapped around the building.
+Google was coming to campus for their termly recruiting event.  I had arrived 20 minutes early so
+that I could settle in and get a decent seat.  How I was mistaken.  As I arrived the line had
+already exceeded the plenty of space that the university's Federation Hall had provided.   Every
+hallway was lined with students and if it hadn't been raining, the line might have easily wrapped
+around the building.
 
-Accepting the magnitude of the situation, I took my place in line standing amongst the many young first year CS and engineering students all with the hopes of scoring "The Cali" job for their up and coming co-op year.  I looked around, many had come with their friends and classmates.  Others, like myself, just standing there using our phones as a means to patiently wait.  As I stood there, I could recognise the typical university banter.  All the usual talk about assignments and midterms that just had been completed, along with the few unique individuals stroking their egos by asking seemingly innocent but pervasive questions like "What did you get on the midterm?" or "You're not done [insert course code here] assignment yet!?"
+Accepting the magnitude of the situation, I took my place in line standing amongst the many young
+first year CS and engineering students all with the hopes of scoring "The Cali" job for their up and
+coming co-op year.  I looked around, many had come with their friends and classmates.  Others, like
+myself, just standing there using our phones as a means to patiently wait.  As I stood there, I
+could recognise the typical university banter.  All the usual talk about assignments and midterms
+that just had been completed, along with the few unique individuals stroking their egos by asking
+seemingly innocent but pervasive questions like "What did you get on the midterm?" or "You're not
+done [insert course code here] assignment yet!?"
 
-It finally came time for the mob of students to be let into the presentation hall.   The doors opened and with the promise of free pizza, all hell broke loose.  In typical student fashion the line vanished.  Students at the end of line who had just arrived, rushed for the door cutting infront of everyone left, right and center. And when the others saw, all morals dissipated and a mob mentality took over.   A Hobbesian state of nature unfolding right in front of me. The sacred commonly agreed upon laws usually upheld by society became non-existent. My initiative of arriving early, instantaneously became pointless.  As the chaos settled and the hungry students got their pizza,  I was one of the lucky ones to get a proper seat in the auditorium, but as I looked around, I could see students crowding the aisles and perimeter of the room, easily breaking whatever fire code was set in place.  
+It finally came time for the mob of students to be let into the presentation hall.   The doors
+opened and with the promise of free pizza, all hell broke loose.  In typical student fashion the
+line vanished.  Students at the end of line who had just arrived, rushed for the door cutting
+infront of everyone left, right and center. And when the others saw, all morals dissipated and a mob
+mentality took over.   A Hobbesian state of nature unfolding right in front of me. The sacred
+commonly agreed upon laws usually upheld by society became non-existent. My initiative of arriving
+early, instantaneously became pointless. As the chaos settled and the hungry students got their
+pizza,  I was one of the lucky ones to get a proper seat in the auditorium, but as I looked around,
+I could see students crowding the aisles and perimeter of the room, easily breaking whatever fire
+code was set in place.
 
-After a short while, as students still trickled in, a young, extroverted woman appeared on the front podium.  Knowing exactly what students were jonesing for, she was immediately able to grab the attention of the entire auditorium with the promise of free google "swag".  After all the fun and games,  the actual presentations began.  Google had 5 speakers lined up.  They were all University of Waterloo alumni who had ended up at Google full time.  They were there to share their stories of how they got to where they were with the end goal, I assume, to try to offer some advice.  Every preseneter was passionate about their work, each solving interesting and challenging problems.  But as I listened to their individual stories, a problem arose for me.  They all presented a fairly similar story arch. This arch was best visualized in their powerp...google slides template. One slide in particular.
+After a short while, as students still trickled in, a young, extroverted woman appeared on the front
+podium.  Knowing exactly what students were jonesing for, she was immediately able to grab the
+attention of the entire auditorium with the promise of free google "swag". After all the fun and
+games,  the actual presentations began.  Google had 5 speakers lined up.  They were all University
+of Waterloo alumni who had ended up at Google full time.  They were there to share their stories of
+how they got to where they were with the end goal, I assume, to try to offer some advice. Every
+preseneter was passionate about their work, each solving interesting and challenging problems. But
+as I listened to their individual stories, a problem arose for me.  They all presented a fairly
+similar story arch. This arch was best visualized in their powerp...google slides template. One
+slide in particular.
 
-The slide contained an image of a linear graph. Almost reminicent of when you first learned how to graph the function $ y = mx + b $ in elementary school.  A linear function with a positive slope of their career trajectory increasing as a function of their time at the University of Waterloo (...I took the liberty to add in the axes).  
+The slide contained an image of a linear graph. Almost reminicent of when you first learned how to
+graph the function $ y = mx + b $ in elementary school. A linear function with a positive slope of
+their career trajectory increasing as a function of their time at the University of Waterloo (...I
+took the liberty to add in the axes).
 
 <Image src={coopGraph} alt="" />
 
-Every one of these presentors was an all-star alumnist which was something to definitely strive towards. But sitting in my seat, all I could ask myself was what in the hell was I doing at this event?  I could see optimistic first year Jon, telling himself that this path to Google (or any company for that matter) was feasable. Unfortunately, my years in school had beaten that optimism out of me. I had been a terrible student. I was a failed dropout trying to redeem himself in his last year.  But seeing these presentations, there was no way I could enter the tech industry as a software engineer.  I missed my chance because I fucked up early on in my university career.
-
-
-
-
-
-
+Every one of these presentors was an all-star alumnist which was something to definitely strive
+towards. But sitting in my seat, all I could ask myself was what in the hell was I doing at this
+event? I could see optimistic first year Jon, telling himself that this path to Google (or any
+company for that matter) was feasable. Unfortunately, my years in school had beaten that optimism
+out of me. I had been a terrible student. I was a failed dropout trying to redeem himself in his
+last year. But seeing these presentations, there was no way I could enter the tech industry as a
+software engineer. I missed my chance because I fucked up early on in my university career.

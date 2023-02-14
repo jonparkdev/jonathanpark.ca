@@ -1,11 +1,11 @@
-version: "3.0"
+version: '3.0'
 
 services:
   jonathanpark_ca:
-    build: 
+    build:
       context: .
       dockerfile: Dockerfile
-    ports: 
+    ports:
       - 80:3000
       - 443:3000
 #     networks:
