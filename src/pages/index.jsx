@@ -235,7 +235,7 @@ export default function Home({ articles }) {
         <title>Jonathan Park - An excuse to learn</title>
         <meta
           name="description"
-          content="I’m Jonathan Park, a software curious about way to many things."
+          content="I’m Jonathan Park, a software engineer curious about way to many things."
         />
       </Head>
       <Container className="mt-9">
