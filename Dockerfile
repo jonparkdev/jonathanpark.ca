@@ -12,6 +12,8 @@ COPY jsconfig.json ./
 COPY postcss.config.js ./
 COPY tailwind.config.js ./
 
+ENV NEXT_PUBLIC_SITE_URL="https://jonathanpark.ca"
+
 RUN npm run build
 
 FROM node:18-alpine AS runner
