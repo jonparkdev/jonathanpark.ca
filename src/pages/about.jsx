@@ -60,14 +60,14 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                It can be a bit of a challenge to write about oneself. I can talk about a bunch of
-                things that best describe me but, in the end, a short blurb won’t get to the heart
-                of who I am.
+                It can be a bit of a challenge to write about oneself but I’ll try my best. I am
+                curious about many things which fuels a love to learn. Currently, the passions that
+                are part of my day to day life revolve around software and martial arts. I also have
+                a fond interest in mathematics and philosophy.
               </p>
               <p>
-                I am curious about many things which fuels a love to learn. Currently, the passions
-                that are part of my day to day life revolve around software and martial arts. I also
-                have a fond interest in mathematics and philosophy. To get a better sense of my
+                I can go on and talk about a bunch of things that best describe me but, in the end,
+                a short blurb won’t get to the heart of who I am. So to get a better sense of my
                 voice, feel free to take a look around the site. And if there is anything that
                 relates to you or peaks your curiousity please feel free to reach out. I would love
                 to chat!
