@@ -30,6 +30,10 @@ export function ArticleLayout({ children, meta, isRssFeed = false, previousPathn
       <Head>
         <title>{`${meta.title} - Jonathan Park`}</title>
         <meta name="description" content={meta.description} />
+        <meta property="og:title" content={meta.title} />
+        <meta property="og:description" content={meta.description} />
+        <meta property="og:url" content={router.asPath} />
+        <meta property="og:image" content={meta.image} />
       </Head>
       <Container className="mt-16 lg:mt-32">
         <div className="xl:relative">
