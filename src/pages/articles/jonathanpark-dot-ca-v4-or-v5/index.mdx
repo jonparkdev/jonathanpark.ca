@@ -13,8 +13,8 @@ export const meta = {
 
 export default (props) => <ArticleLayout meta={meta} {...props} />;
 
-I think I have redone my portfolio website 4 or 5 times. Each iteration usually fueled by wanting to
-learn something new.
+I think I have redone my portfolio website 4 or 5 times. Each iteration is usually fueled by wanting
+to learn something new.
 
 <Image src={firstWebsite} alt="first website" />
 
@@ -25,60 +25,72 @@ absolutely no idea how to host a website. As simple as this website was, I can n
 how pivotal version 1 was in helping me get my first job.
 
 When I started working at my very first software job, I was introduced to
-[ReactJS](https://reactjs.org/). Since I was a "real" web developer with a couple months under my
+[ReactJS](https://reactjs.org/). Since I was a "real" web developer with a couple of months under my
 belt, I had to get with the times and ditch my static website. I began by registering the domain
-name _jonathanpark.ca_ and went ahead and converted all the code to React. Getting a little over
-zealous, I proceeded to do another refactor to the React derivative framework
+name _jonathanpark.ca_ and went ahead and converted all the code to React. Getting a little
+overzealous, I proceeded to do another refactor to the React derivative framework
 [NextJS](https://nextjs.org/). Now that I had a **domain name** :white_check_mark: and a **shiny
 website built with a modern JavaScript framework** :white_check_mark:, it was time for me to move
-away from Github Pages and deploy all these newly minted changes to the cloud. So I went with the
-most user friendly cloud provider [Digital Ocean](https://www.digitalocean.com/).
+away from GitHub Pages and deploy all these newly minted changes to the cloud. So I went with the
+most user-friendly cloud provider [Digital Ocean](https://www.digitalocean.com/).
 
-After living off [Hacker News](https://news.ycombinator.com) my first year of coding, I was
-motivated to start blogging. Instead of actually doing the writing that is required to publish a
-blog, I needed to create the perfect writing and publishing experience. I am a developer after all,
-I can't just use an out of box solution. This led me to look into "headless" content management
-systems (CMS). Think the aesthetics of [Medium](https://medium.com) with the publishing power of
-[Wordpress](https://wordpress.com) but without all that PHP stuff. There were many different options
+After living off [Hacker News](https://news.ycombinator.com) in my first year of coding, I was
+motivated to start blogging. Instead of doing the writing that is required to publish a blog, I
+needed to create the perfect writing and publishing experience. I am a developer after all, I can't
+just use an out of the box solution. This led me to look into "headless" content management systems
+(CMS). Think the aesthetics of [Medium](https://medium.com) with the publishing power of
+[WordPress](https://wordpress.com) but without all that PHP stuff. There were many different options
 but I decided to try out [Ghost](https://ghost.org/). I spent quite a bit of time wiring up my React
 site to interface with Ghost... but as expected, I did not end up blogging. When I did write, I came
-to the realization I did not need some fancy CMS. I am a developer after all. Markdown, Github and
-an IDE is all I need :wink:.
+to the realization I did not need some fancy CMS. I am a developer after all. Markdown, GitHub and
+an IDE are all I need :wink:.
 
-Other than some small/irrellevant details in the journey, we are all caught up to present day. The
+Other than some small/irrelevant details in this journey, we are all caught up to present day. The
 current version of jonathanpark.ca is the very thing that you are reading this article on. It's
 nothing special. It's just a NextJS template from [Tailwind](https://tailwindcss.com/), which is the
-CSS framework I use to make things look nice. In the experience I have gathered, designing something
-myself usually drives me crazy so I use Tailwind for all my protoyping needs. What I really want to
-highlight is this:
+CSS framework I use to make things look nice. From the experience I have gathered, designing
+something myself usually drives me crazy so I use Tailwind for all my prototyping needs. What I
+really want to highlight is this:
 
 <Image src={homelab} alt="homelab" />
 
-What you are looking at is my homelab in its infancy. It is hard to see but underneath the Macbook
-is my old 8 year old laptop that houses this very website. That means when you clicked on this very
-link, your computer made a request by propagating some abstraction of an electric signal that has
-journeyed its way into my home and onto the very laptop that lives underneath my desk. Isn't that
-cool!
+What you are looking at is my homelab in its infancy (_the server rack you can get from ikea for
+$20_). It is hard to see but underneath the Macbook is my 8-year-old laptop that houses this very
+website. That means when you clicked on the link to this article, your computer made a request by
+propagating some abstraction of an electric signal that journeyed its way into my home and onwards
+to the very laptop that lives underneath my desk. I think that's pretty damn cool.
 
 Although I would love to get technical and take a deep dive into how I went about self-hosting the
 site, this won't be the article for that. Instead, as mentioned in my previous
 [post](/articles/clickbait-part-1), my goal with these articles is to reflect and try to extract
-some useful nuggets of information that students or up and coming developers might find useful
-(...or maybe relatable and entertaining).
+some nuggets of information that students or up-and-coming developers might find useful
+(...relateable and/or entertaining).
 
-Most important lesson which isn't anything new: **_build something_**
+If I were to distill the many lessons I have learned from this website down to the most basic form,
+it would be: **_build something simple!_**
 
-I'm not yet comfortable to teach the concepts needed to deploy this but at a high level here are the
-the things I have learned:
+This is by far not a revolutionary message. It's a cliché that can be applied to anything worth
+accomplishing. But from a developer's perspective, I would like to emphasize this lesson as I think
+my site is a great experiment to prove the point.
 
-Lesson to all new developers: **_build a portfolio site and put it on the internet, it does not
-matter how simple it is_**.
+As I highlighted above, jonathanpark.ca has been through many iterations. It started as a simple
+static portfolio site, which is a great project to begin with when you are learning fundamentals.
+**_I built something simple_**. And although I use the term "simple", at the time it was the right
+amount of difficulty. I remember every job board I read when searching for that first position
+really made me feel like I needed to learn the latest technologies if I was going to be successful.
+But how can you learn something like ReactJS if you don't understand basic JavaScript, HTML/CSS, or
+even more fundamental, how to host a website?
 
-The Lesson... This website was my very first project. As simple as it started out, it has truly
-become a fullstack project. It has been through many iterations. It started as something simple but
-the more things I learn, I can apply to the website.
+This site was my very first project and after 4 years it's still something I work on. From it's
+primitive inception I have used it as a sandbox to evolve my skills. A laboratory for development.
+In its most recent state, jonathanpark.ca has truly become a full-stack application:
 
-The lesson, its natural to want to do complicated projects. Especially with the pressure of trying
-to get a job. But I think its important to start with something simple. Something that you can
-finish. Something that you can be proud of. Something that you can show off. Something that you can
-learn from. Something that you can build on.
+- **Fundamental Networking**: Firewalls, VLAN's, DNS, IP/Subnetting, SSL/TLS
+- **Virtualization**: Proxmox, Virtual Machines, Containers (_...Kubernetes coming soon_)
+- **Infrastructure as Code**: Ansible, Terraform, GitOps
+- **Application Development**: NextJS (statically and dynamically generated website with an
+  ExpressJS server as a backend)
+
+When I look at a job board now (_I am happily employed_ :wink:), I'm not intimidated anymore by the
+requirements. I can confidently say that I fulfill all or most of the requirements with this one
+project alone!

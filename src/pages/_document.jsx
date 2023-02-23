@@ -43,7 +43,7 @@ export default function Document() {
           rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"
           integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X"
-          crossorigin="anonymous"
+          crossOrigin="anonymous"
         />
         <script dangerouslySetInnerHTML={{ __html: modeScript }} />
         <link
@@ -56,11 +56,6 @@ export default function Document() {
           type="application/feed+json"
           href={`${process.env.NEXT_PUBLIC_SITE_URL}/rss/feed.json`}
         />
-        <script
-          defer
-          data-domain="jonathanpark.ca"
-          src="https://plausible.io/js/script.js"
-        ></script>
       </Head>
       <body className="flex h-full flex-col bg-zinc-50 dark:bg-black">
         <Main />
