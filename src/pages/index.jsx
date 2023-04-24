@@ -194,7 +194,7 @@ function Resume() {
         ))}
       </ol>
       <Button
-        href="https://drive.google.com/file/d/193hW23Pu7d2-qr22ayy6J5TNhGrtQGBW/view?usp=share_link"
+        href="https://drive.google.com/file/d/1Rp3B2BvvVLU8knmILX966sXtpTTtWcYU/view?usp=sharing"
         variant="secondary"
         className="group mt-6 w-full"
       >
