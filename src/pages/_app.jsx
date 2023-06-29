@@ -3,6 +3,7 @@ import { useEffect, useRef } from 'react';
 import { Footer } from '@/components/Footer';
 import { Header } from '@/components/Header';
 import PlausibleProvider from 'next-plausible';
+import { FpjsProvider } from '@fingerprintjs/fingerprintjs-pro-react';
 
 import '@/styles/tailwind.css';
 import 'focus-visible';
@@ -31,7 +32,13 @@ export default function App({ Component, pageProps, router }) {
         <Header />
         <main>
           <PlausibleProvider domain="jonathanpark.ca">
-            <Component previousPathname={previousPathname} {...pageProps} />
+            <FpjsProvider
+              loadOptions={{
+                apiKey: 'Q9Tin0Pcy5Mgsw04VNvQ',
+              }}
+            >
+              <Component previousPathname={previousPathname} {...pageProps} />
+            </FpjsProvider>
           </PlausibleProvider>
         </main>
         <Footer />
