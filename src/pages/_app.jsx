@@ -35,7 +35,8 @@ export default function App({ Component, pageProps, router }) {
             <FpjsProvider
               loadOptions={{
                 apiKey: 'Q9Tin0Pcy5Mgsw04VNvQ',
-                endpoint: 'https://fingerprint.jonathanpark.ca',
+                scriptUrlPattern: 'https://jonathanpark.ca/39wGgI707VIKmG7U/O7y3kMque0DaVX7s?apiKey=<apiKey>&version=<version>&loaderVersion=<loaderVersion>',
+                endpoint: 'https://jonathanpark.ca/39wGgI707VIKmG7U/nyVRNqHm5JGxgESd',
               }}
             >
               <Component previousPathname={previousPathname} {...pageProps} />
