@@ -31,6 +31,7 @@ export default function App({ Component, pageProps, router }) {
         <Header />
         <main>
           <PlausibleProvider domain="jonathanpark.ca">
+            <Component previousPathname={previousPathname} {...pageProps} />
           </PlausibleProvider>
         </main>
         <Footer />
