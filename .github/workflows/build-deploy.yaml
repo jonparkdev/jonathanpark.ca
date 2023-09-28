@@ -1,37 +1,51 @@
-name: Docker build and publish
+name: Build Docker image and deploy using helm
 
 on:
   push:
     branches:
-      - 'main'
-
+      - "main"
+  
 jobs:
-  build_deploy:
-    name: build and push docker container
 
+  env:
     runs-on: ubuntu-latest
+    outputs:
+      value: ${{ steps.env.outputs.value }}
+      helm_chart: ${{ steps.helm.outputs.value }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
+      - id: env
+        run: |
+          ENV_NAME=${{ github.event.inputs.env_name }}
+          BRANCH_NAME=${GITHUB_REF##*/}
+          NAME=${ENV_NAME:-$BRANCH_NAME}
+          echo "::set-output name=value::${NAME,,}"
+      - id: helm
+        run: |
+          VERSION=$(yq '.version' helm/Chart.yaml)
+          echo "::set-output name=value::${VERSION,,}"
 
-      - name: Docker Login
-        uses: docker/login-action@v1
-        with:
-          username: ${{ secrets.DOCKER_USER }}
-          password: ${{ secrets.DOCKER_PASS}}
+  build:
+    uses: jonparkdev/workflows/.github/workflows/docker-build.yaml@main
+    with: 
+      name: 'jonathanpark-ca'
+    secrets:
+     DOCKER_USER: ${{ secrets.DOCKER_USER }}
+     DOCKER_PASSWORD: ${{ secrets.DOCKER_PASS}}
+  
+  helm:
+    uses: jonparkdev/workflows/.github/workflows/helm-upload.yaml@main
+    secrets:
+      HELM_USER: ${{ secrets.HELM_USER }}
+      HELM_PASSWORD: ${{ secrets.HELM_PASSWORD }}
 
-      - name: Docker meta
-        id: meta
-        uses: docker/metadata-action@v3
-        with:
-          images: jonparkdev/jonathanpark.ca
-          tags: |
-            type=raw,latest
-            type=sha
-
-      - name: Build and push docker image
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.output.labels }}
+  deploy:
+    needs: [ build, env ]
+    uses: jonparkdev/workflows/.github/workflows/argocd-deploy.yaml@main
+    with:
+      name: "jonathanpark-ca"
+      argo_repository: "homelab"
+      branch: "main"
+      chart_version: "${{ needs.env.outputs.helm_chart }}"
+    secrets:
+      token: ${{ secrets.GH_TOKEN }}
